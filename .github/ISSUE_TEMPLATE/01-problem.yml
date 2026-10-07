@@ -1,0 +1,36 @@
+name: Report a problem
+description: Report a failed run, unexpected output, or documentation problem.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Open this issue in the repository where the problem occurs. Include the information you have; you do not need to identify the cause.
+        Leave API keys, credentials, and restricted data out of text and attachments. Mention @phillipjws if you need Phillip's input.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What were you trying to do, and what happened?
+      description: Describe the task, what you expected, and what you observed. Say if this is blocking your analysis.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps and relevant settings
+      description: Include the GUI step, command, or notebook cell, and relevant site or input details if available.
+    validations:
+      required: false
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Error message, screenshot, or example output
+      description: Paste the error text or attach a useful screenshot or small shareable example. For scientific results, explain what looks unexpected.
+    validations:
+      required: false
+  - type: textarea
+    id: environment
+    attributes:
+      label: Setup details
+      description: If known, include your operating system, project version or commit, and Python environment.
+    validations:
+      required: false

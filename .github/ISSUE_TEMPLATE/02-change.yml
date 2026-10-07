@@ -1,0 +1,29 @@
+name: Propose a change
+description: Suggest a feature, documentation improvement, or analysis task.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use the repository where the main work belongs. Describe the scientific or practical purpose, and link related issues if useful.
+        Mention @phillipjws if you need Phillip's input. Leave credentials and restricted data out of text and attachments.
+  - type: textarea
+    id: purpose
+    attributes:
+      label: What is needed, and why?
+      description: Describe the current difficulty or the task you want to carry out.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: What would a useful outcome look like?
+      description: Describe the behaviour, documentation, or analysis result that would resolve this task.
+    validations:
+      required: false
+  - type: textarea
+    id: context
+    attributes:
+      label: Supporting context
+      description: Add relevant workflow details, examples, references, or timing constraints if available.
+    validations:
+      required: false

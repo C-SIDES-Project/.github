@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Questions for Phillip Steeves
+    url: mailto:phillip.steeves@nrcan-rncan.gc.ca
+    about: Contact Phillip directly about the organization or either project.
+  - name: Issue and board workflow
+    url: https://github.com/C-SIDES-Project/.github/blob/main/docs/issues.md
+    about: How to record work and add it to the existing CoastSatCLI board.

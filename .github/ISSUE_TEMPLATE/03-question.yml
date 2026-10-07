@@ -1,0 +1,22 @@
+name: Ask a question
+description: Ask about setup, a workflow, settings, or interpreting outputs.
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Questions can also be directed to phillip.steeves@nrcan-rncan.gc.ca or @phillipjws on GitHub.
+        Use this form when the answer would be useful to the team. Leave credentials and restricted data out of text and attachments.
+  - type: textarea
+    id: question
+    attributes:
+      label: What would you like to know?
+      description: Describe your question and what you are trying to achieve.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Relevant context
+      description: Add the workflow step, documentation link, settings, or output you are asking about, if useful.
+    validations:
+      required: false
